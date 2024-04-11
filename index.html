@@ -3,22 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>بازی</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>بازی!</title>
   </head>
   <body>
     <div id="heart">
-      <span class="material-symbols-outlined">favorite</span
-      ><span class="material-symbols-outlined">favorite</span
-      ><span class="material-symbols-outlined">favorite</span>
+      <span class="material-symbols-outlined"> favorite </span>
+      <span class="material-symbols-outlined"> favorite </span>
+      <span class="material-symbols-outlined"> favorite </span>
     </div>
     <canvas id="canvas" width="800" height="600"></canvas>
-
     <div id="info">
       <p>بزن بریم!</p>
       <div>
@@ -26,15 +24,15 @@
         <button type="button" class="btn reset" data-mode="normal">عادی</button>
         <button type="button" class="btn reset" data-mode="hard">خفن</button>
       </div>
-      <button id="rules-btn" class="btn">قوانین</button>
+      <button type="button" class="btn" id="open-btn">قوانین</button>
+    </div>
+    <div class="rules" id="rules">
+      <h2>چطوری بازی کنیم:</h2>
+      <p>از دکمه های چپ و راست برای حرکت دادن پارو استفاده کنید</p>
+      <p>اگر توپ رو از دست بدی، سوختی!</p>
+      <button type="button" class="btn" id="close-btn">بستن</button>
     </div>
 
-    <div id="rules" class="rules">
-      <h2>چطوری بازی کنیم:</h2>
-      <p>از دکمه های چپ و راست کیبورد برای حرکت دادن پارو استفاده کنید.</p>
-      <p>اگر توپ رو از دست بدی، سوختی!</p>
-      <button id="close-btn" class="btn">بستن</button>
-    </div>
     <script src="script.js"></script>
   </body>
 </html>
